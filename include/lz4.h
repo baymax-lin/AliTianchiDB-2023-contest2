@@ -131,8 +131,9 @@ extern "C" {
 #endif
 
 /*------   Version   ------*/
-#define LZ4_VERSION_MAJOR 1   /* for breaking interface changes  */
-#define LZ4_VERSION_MINOR 9   /* for new (non-breaking) interface capabilities \
+#define LZ4_VERSION_MAJOR 1 /* for breaking interface changes  */
+#define LZ4_VERSION_MINOR                                                      \
+    9                         /* for new (non-breaking) interface capabilities \
                                */
 #define LZ4_VERSION_RELEASE 4 /* for tweaks, bug-fixes, or development */
 
@@ -368,8 +369,9 @@ typedef union LZ4_stream_u LZ4_stream_t; /* incomplete type (defined later) */
    "#if !defined(RC_INVOKED) ... #endif" block that means
    "skip this block when rc.exe is trying to read it".
 */
-#if !defined(RC_INVOKED) /* https://docs.microsoft.com/en-us/windows/win32/menurc/predefined-macros \
-                          */
+#if !defined(                                                                              \
+    RC_INVOKED) /* https://docs.microsoft.com/en-us/windows/win32/menurc/predefined-macros \
+                 */
 #if !defined(LZ4_STATIC_LINKING_ONLY_DISABLE_MEMORY_ALLOCATION)
 LZ4LIB_API LZ4_stream_t* LZ4_createStream(void);
 LZ4LIB_API int LZ4_freeStream(LZ4_stream_t* streamPtr);
@@ -474,8 +476,9 @@ typedef union LZ4_streamDecode_u LZ4_streamDecode_t; /* tracking context */
  *  creation / destruction of streaming decompression tracking context.
  *  A tracking context can be re-used multiple times.
  */
-#if !defined(RC_INVOKED) /* https://docs.microsoft.com/en-us/windows/win32/menurc/predefined-macros \
-                          */
+#if !defined(                                                                              \
+    RC_INVOKED) /* https://docs.microsoft.com/en-us/windows/win32/menurc/predefined-macros \
+                 */
 #if !defined(LZ4_STATIC_LINKING_ONLY_DISABLE_MEMORY_ALLOCATION)
 LZ4LIB_API LZ4_streamDecode_t* LZ4_createStreamDecode(void);
 LZ4LIB_API int LZ4_freeStreamDecode(LZ4_streamDecode_t* LZ4_stream);
@@ -879,7 +882,7 @@ union LZ4_streamDecode_u {
 #define LZ4_DEPRECATED(message) __attribute__((deprecated))
 #else
 #pragma message( \
-        "WARNING: LZ4_DEPRECATED needs custom implementation for this compiler")
+    "WARNING: LZ4_DEPRECATED needs custom implementation for this compiler")
 #define LZ4_DEPRECATED(message) /* disabled */
 #endif
 #endif /* LZ4_DISABLE_DEPRECATE_WARNINGS */

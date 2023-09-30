@@ -247,6 +247,8 @@ class ColumnFamily {
 
     LRUCache<ListNode>* lru;
 
+    std::vector<CompressIndex> comressIndex;
+
     size_t statF1 = 0;
     size_t statF2 = 0;
     size_t statF3 = 0;
@@ -412,9 +414,15 @@ class ColumnFamily {
         temp.offset = blockOffset, temp.size = blockContentSize,
         temp.compressed = compressd;
         *(CompressIndex*)(maddr2 + offset) = temp;
+
+        comressIndex.push_back(std::move(temp));
         curBlockId++;
         return 0;
     }
+
+    void persistCompressIndex(int fd, size_t offset) {}
+
+    void recoveryCompressIndex(int fd, size_t offset) {}
 
     inline bool checkBuffer() {
         // if (cfType == COLUMNFAMILY_INT_OR_DOUBLE)
