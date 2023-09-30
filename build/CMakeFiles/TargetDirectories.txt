@@ -1,0 +1,5 @@
+/home/baymax/alidb/lindorm-tsdb-contest-cpp/build/CMakeFiles/yourDbLib.dir
+/home/baymax/alidb/lindorm-tsdb-contest-cpp/build/CMakeFiles/testMyDb.dir
+/home/baymax/alidb/lindorm-tsdb-contest-cpp/build/CMakeFiles/perfTest.dir
+/home/baymax/alidb/lindorm-tsdb-contest-cpp/build/CMakeFiles/edit_cache.dir
+/home/baymax/alidb/lindorm-tsdb-contest-cpp/build/CMakeFiles/rebuild_cache.dir

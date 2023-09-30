@@ -1,0 +1,1 @@
+g++ -pthread -ldl -lrt -fopenmp  -O0 -g  -rdynamic CMakeFiles/testMyDb.dir/TestMyDb.cpp.o -o testMyDb  libyourDbLib.a 

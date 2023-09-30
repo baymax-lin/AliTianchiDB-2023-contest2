@@ -1,0 +1,78 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"jsonFile" : "directory-.-Debug-f5ebdc15457944623624.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "2.8.12"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "lindorm-tsdb-contest-cpp",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "perfTest::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-perfTest-Debug-873b48ed0c25606ff4ed.json",
+					"name" : "perfTest",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "testMyDb::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-testMyDb-Debug-b4241a50622f6a1ba064.json",
+					"name" : "testMyDb",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "yourDbLib::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-yourDbLib-Debug-83ee2b8e4ad9cb953350.json",
+					"name" : "yourDbLib",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/baymax/alidb/lindorm-tsdb-contest-cpp/build",
+		"source" : "/home/baymax/alidb/lindorm-tsdb-contest-cpp"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 3
+	}
+}

@@ -1,0 +1,1 @@
+g++ -pthread -ldl -lrt -fopenmp  -O0 -g  -rdynamic CMakeFiles/perfTest.dir/perfTest.cpp.o -o perfTest  libyourDbLib.a 
